@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject', [
+        .module('smartmarket-web', [
             'ui.router',
             'ngRoute',
             'ngLodash'

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .constant('BASEPATH', {
             apiURL: '@@apiURL',
             webURL: '@@webURL'

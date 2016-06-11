@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .provider('RouteHelpers', RouteHelpers);
 
     function RouteHelpers() {
