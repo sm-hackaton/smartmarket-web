@@ -1,0 +1,13 @@
+.login
+    .login__box
+        form.css-form.login__form(role='form', ng-submit="login()", name='loginForm', novalidate='', method='post').mb-lg
+            .form-group
+                input.form-control(type='text', ng-model="user.email", name="user_email", autocomplete="off", required='')
+                label.control-label Name
+            
+            .form-group
+                input.form-control(type='password', ng-model="user.password", name="user_password", required='')
+                label.control-label Password
+                
+            button.btn(type='submit') 
+                | login

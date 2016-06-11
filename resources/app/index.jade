@@ -1,0 +1,18 @@
+doctype html
+html(lang="es", data-ng-app="todoProject")
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
+        title TODO Project - David Iruzubieta
+        // Application styles
+        link(rel='stylesheet', href='app/css/main.css')
+    body
+        #app.app
+            header.header
+                img.header__img(src="app/img/logo.png", alt="Smart Market")
+            article.main
+                .wrapper(ui-view="")
+            //- footer.footer
+        script(src='app/js/base.js')
+        script(src='app/js/app.js')
