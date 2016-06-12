@@ -21,7 +21,14 @@
             AuthenticationService.login($scope.username, $scope.password)
                 .then(function (response) {
                     $rootScope.headerInLogin = false;
-                    $state.go("seller");
+                    if (response.account.type === "manager") {
+                        $state.go("manager");
+                    } else if(response.account.type === "seller"){
+                        $state.go("seller");
+                    } else {
+                        $state.go("user");
+                    }
+
                 }).catch(function (err) {
                 // Validacion de errores
                 console.log('error');
