@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject', [
+        .module('smartmarket-web', [
             'ui.router',
             'ngRoute',
             'ngLodash'
@@ -17,7 +17,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .controller('HomeController', HomeController);
 
     HomeController.$inject = ['$scope', '$rootScope'];
@@ -34,7 +34,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .controller('LoginController', LoginController);
 
     LoginController.$inject = ['$scope', '$state', '$rootScope'];
@@ -57,7 +57,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .controller('TodoController', TodoController);
 
     TodoController.$inject = ['$scope'];
@@ -121,7 +121,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .constant('BASEPATH', {
             apiURL: '[your API URL]',
             webURL: '[your WEB URL]'
@@ -131,7 +131,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .config(URLConfig)
         .config(InitialConfiguration);
 
@@ -172,20 +172,20 @@
      * @constructor
      */
     function InitialConfiguration($controllerProvider, $compileProvider, $filterProvider, $provide) {
-        angular.module('todoProject').controller = $controllerProvider.register;
-        angular.module('todoProject').directive = $compileProvider.directive;
-        angular.module('todoProject').filter = $filterProvider.register;
-        angular.module('todoProject').factory = $provide.factory;
-        angular.module('todoProject').service = $provide.service;
-        angular.module('todoProject').constant = $provide.constant;
-        angular.module('todoProject').value = $provide.value;
+        angular.module('smartmarket-web').controller = $controllerProvider.register;
+        angular.module('smartmarket-web').directive = $compileProvider.directive;
+        angular.module('smartmarket-web').filter = $filterProvider.register;
+        angular.module('smartmarket-web').factory = $provide.factory;
+        angular.module('smartmarket-web').service = $provide.service;
+        angular.module('smartmarket-web').constant = $provide.constant;
+        angular.module('smartmarket-web').value = $provide.value;
     }
 })();
 
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .provider('RouteHelpers', RouteHelpers);
 
     function RouteHelpers() {

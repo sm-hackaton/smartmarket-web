@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('todoProject')
+        .module('smartmarket-web')
         .controller('LoginController', LoginController);
 
     LoginController.$inject = ['$scope', '$state', '$rootScope'];
