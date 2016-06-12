@@ -16,7 +16,6 @@
     function LoginController($scope, $state, $rootScope, AuthenticationService) {
         // AuthenticationService.clearCredentials();
         $rootScope.headerInLogin = true;
-        debugger
 
         $scope.login = function () {
             AuthenticationService.login($scope.username, $scope.password)

@@ -2,9 +2,9 @@
     'use strict';
     angular
         .module('smartmarket-web')
-        .controller('LoginController', LoginController);
+        .controller('ManagerController', ManagerController);
 
-    LoginController.$inject = ['$scope', '$state', '$rootScope', 'AuthenticationService'];
+    ManagerController.$inject = ['$scope', '$state', '$rootScope', 'AuthenticationService'];
     /**
      * TodoController
      * @param $scope
@@ -13,8 +13,8 @@
      * @param AuthenticationService
      * @constructor
      */
-    function LoginController($scope, $state, $rootScope, AuthenticationService) {
-        
+    function ManagerController($scope, $state, $rootScope, AuthenticationService) {
+
 
     }
 })();
