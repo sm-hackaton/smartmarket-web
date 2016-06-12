@@ -18,6 +18,46 @@
     'use strict';
     angular
         .module('smartmarket-web')
+        .controller('HomeController', HomeController);
+
+    HomeController.$inject = ['$scope', '$rootScope'];
+    /**
+     * TodoController
+     * @param $scope
+     * @constructor
+     */
+    function HomeController($scope, $rootScope) {
+
+    }
+})();
+
+(function () {
+    'use strict';
+    angular
+        .module('smartmarket-web')
+        .controller('LoginController', LoginController);
+
+    LoginController.$inject = ['$scope', '$state', '$rootScope'];
+    /**
+     * TodoController
+     * @param $scope
+     * @constructor
+     */
+    function LoginController($scope, $state, $rootScope) {
+        $rootScope.headerInLogin = true;
+
+        $scope.login = function(){
+            $state.go("home")
+            $rootScope.headerInLogin = false;
+        }
+
+    }
+})();
+
+(function () {
+    'use strict';
+    angular
+        .module('smartmarket-web')
         .controller('TodoController', TodoController);
 
     TodoController.$inject = ['$scope'];
@@ -75,46 +115,6 @@
                 return !todo.done;
             });
         }
-    }
-})();
-
-(function () {
-    'use strict';
-    angular
-        .module('smartmarket-web')
-        .controller('LoginController', LoginController);
-
-    LoginController.$inject = ['$scope', '$state', '$rootScope'];
-    /**
-     * TodoController
-     * @param $scope
-     * @constructor
-     */
-    function LoginController($scope, $state, $rootScope) {
-        $rootScope.headerInLogin = true;
-
-        $scope.login = function(){
-            $state.go("home")
-            $rootScope.headerInLogin = false;
-        }
-
-    }
-})();
-
-(function () {
-    'use strict';
-    angular
-        .module('smartmarket-web')
-        .controller('HomeController', HomeController);
-
-    HomeController.$inject = ['$scope', '$rootScope'];
-    /**
-     * TodoController
-     * @param $scope
-     * @constructor
-     */
-    function HomeController($scope, $rootScope) {
-
     }
 })();
 
