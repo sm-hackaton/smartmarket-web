@@ -13,6 +13,7 @@
   right: 5%;
   position: absolute;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  display: table;
 }
 .login__form {
   height: 75%;
@@ -84,9 +85,22 @@
   overflow: scroll;
 }
 .home__box__list__item {
-  height: 5em;
+  height: 6em;
   margin: 0px 50px;
   border-bottom: 1px solid #878787;
+  padding-top: 15px;
+}
+.home__box__list__item .date {
+  font-size: 14px;
+  color: #878787;
+}
+.home__box__list__item__data {
+  display: flex;
+}
+.home__box__list__item__data .price {
+  font-size: 2em;
+  margin: 0;
+  margin-right: 20px;
 }
 .home__box .buttons {
   display: flex;
