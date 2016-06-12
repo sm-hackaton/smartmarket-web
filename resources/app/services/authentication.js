@@ -26,7 +26,8 @@
                             uuid: response.account.uuid,
                             name: response.account.first_name,
                             surname: response.account.last_name,
-                            username: response.account.username
+                            username: response.account.username,
+                            type: response.account.type
                         }
                     };
                     $cookieStore.put('globals', $rootScope.globals);
@@ -37,10 +38,10 @@
                     console.log('error');
                     defered.reject({
                         success: false,
-                        message: response ? response.error : '',
-                        status: status,
-                        headers: headers,
-                        config: config
+                        message: err.message,
+                        status: err.status,
+                        headers: err.headers,
+                        config: err.config
                     });
                 });
 

@@ -23,17 +23,17 @@
                     $rootScope.headerInLogin = false;
                     if (response.account.type === "manager") {
                         $state.go("manager");
-                    } else if(response.account.type === "seller"){
+                    } else if (response.account.type === "seller") {
                         $state.go("seller");
                     } else {
                         $state.go("user");
                     }
 
-                }).catch(function (err) {
-                // Validacion de errores
-                console.log('error');
-            });
+                })
+                .catch(function (err) {
+                    // Validacion de errores
+                    console.log('error');
+                });
         }
-
     }
 })();

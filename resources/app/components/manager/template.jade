@@ -18,72 +18,27 @@ div.home
             .col.s4
                 div.home__box__user
                     img.user__image(src="../../../app/img/manfaat-mengetahui-elastisitas-permintaan.jpg", alt="")
-                    h1 Mercado Diego de Leon
+                    h1 {{ globals.currentUser.name }} {{ globals.currentUser.surname }}
                     h2 C/Diego de leon 24
                     div
                         p Numero de puestos 19
                         p Telefono: 673 923 239
             div.home__box__list.col.s8
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
+                .preloader-wrapper.big.active(ng-show='loading')
+                    .spinner-layer.spinner-orange-only
+                        .circle-clipper.left
+                            .circle
+                        .gap-patch
+                            .circle
+                        .circle-clipper.right
+                            .circle
+
+                div.home__box__list__item(ng-repeat='device in devices')
+                    .home__box__list__item__data(ng-click='showSeller(device.uuid)')
+                        small.date TPV: {{ device.uuid }}
+                        p.user Usuario: {{ device.seller.first_name }} {{ device.seller.last_name }}
                     .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
-                div.home__box__list__item
-                    .home__box__list__item__data
-                        small.date TPV: kalsdfj-asñlkdf-aslñdfkj
-                        p.user Usuario: Antonio Rodrigo
-                    .home__box__list__item__price
-                        p.price 2.323€
+                        p.price X.XXX€
                 
                 
             
