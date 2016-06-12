@@ -33,6 +33,10 @@
                 url: '/manager',
                 templateUrl: helper.basepath('components', 'manager'),
                 controller: 'ManagerController'
+            }).state('user', {
+                url: '/user',
+                templateUrl: helper.basepath('components', 'user'),
+                controller: 'UserController'
             });
     }
 
