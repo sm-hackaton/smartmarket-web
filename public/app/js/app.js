@@ -20,14 +20,14 @@
         .module('todoProject')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope'];
+    HomeController.$inject = ['$scope', '$rootScope'];
     /**
      * TodoController
      * @param $scope
      * @constructor
      */
-    function HomeController($scope) {
-        console.log('test');
+    function HomeController($scope, $rootScope) {
+
     }
 })();
 
@@ -37,16 +37,18 @@
         .module('todoProject')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$scope', '$state'];
+    LoginController.$inject = ['$scope', '$state', '$rootScope'];
     /**
      * TodoController
      * @param $scope
      * @constructor
      */
-    function LoginController($scope, $state) {
+    function LoginController($scope, $state, $rootScope) {
+        $rootScope.headerInLogin = true;
 
         $scope.login = function(){
             $state.go("home")
+            $rootScope.headerInLogin = false;
         }
 
     }

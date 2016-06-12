@@ -1,3 +1,12 @@
+$white : #FFFFFF
+$lightMain : #ef9281
+$darkMain : #b6685d
+$midiumMain: #ed7d69
+$lightSecond : #f7af4d
+$darkSecond : #ce9547
+$light-grey-color: #d3d3d3
+$dark-grey-color: #918f90
+
 .header
     position: absolute
     top: 0px
@@ -8,11 +17,21 @@
     &__img
         width: 14em
         padding: 20px
-
+    &--in
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        background-color: $midiumMain
+        height: 100px
+        height: 200px
 
 .main
     margin-top: 50px
     height: calc(100vh - 100px)
+    &--in
+        margin-top: 200px
+        height: calc(100vh - 200px)
 
 .footer
     position: absolute

@@ -1,13 +1,17 @@
 .login
     .login__box
-        form.css-form.login__form(role='form', ng-submit="login()", name='loginForm', novalidate='', method='post').mb-lg
-            .form-group
-                input.form-control(type='text', ng-model="user.email", name="user_email", autocomplete="off", required='')
-                label.control-label Name
-            
-            .form-group
-                input.form-control(type='password', ng-model="user.password", name="user_password", required='')
-                label.control-label Password
-                
-            button.btn(type='submit') 
-                | login
+        .row.login__form
+          form.col.s12(role='form', ng-submit="login()", name='loginForm', novalidate='', method='post')
+            .row
+              .input-field.col.s12
+                //- i.material-icons.prefix account_circle
+                input#Name.validate(type='text')
+                label(for='Name') Name
+            .row
+              .input-field.col.s12
+                //- i.material-icons.prefix vpn_key
+                input#Password.validate(type='password')
+                label(for='Password') Password
+            button.btn.waves-effect.waves-light.submit(type='submit', name='action')
+              | Submit
+              i.material-icons.right send

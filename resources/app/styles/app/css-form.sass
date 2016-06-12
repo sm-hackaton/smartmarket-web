@@ -1,202 +1,202 @@
-.form
-    &-control
-        border-radius: 0px
-        &:focus
-            border-color: $light-grey-color
-            box-shadow: none
-
-.css-form
-    .form-group
-        position: relative
-        padding: 0% 10% 0% 10%
-        max-width: 100%
-        label
-            color: #999
-            font-size: 18px
-            font-weight: normal
-            position: absolute
-            pointer-events: none
-            left: 8%
-            top: 0px
-            transition: 0.2s ease all
-            -moz-transition: 0.2s ease all
-            -webkit-transition: 0.2s ease all
-        &__options
-            background-color: #FFF
-            border: 2px
-            border-top: 0px
-            border-style: solid
-            border-color: $light-grey-color
-            position: absolute
-            z-index: 1000
-            width: 80%
-            &__option
-                padding: 5px 0px
-                p
-                    margin-bottom: 0px
-            &__option:hover
-                background-color: $light-grey-color
-        p.form-control
-            font-size: 14px
-            padding: 6px 0px
-            box-shadow: none
-            border: 0px
-            border-bottom: 2px solid $lightSecond
-            color: #A5A5A5
-        p.form-control ~ label
-            left: 8%
-            top: -16px
-            font-size: 12px
-            color: #A6A6A6
-
-        input[type="text"], input[type="number"], input[type="email"], input[type="password"]
-            border: 0px
-            padding: 0px
-            background: none
-            box-shadow: none
-            border-bottom: 2px solid $light-grey-color
-
-            &:focus
-                border-color: $lightSecond
-
-            &:focus ~ label, &:valid ~ label
-                left: 8%
-                top: -16px
-                font-size: 12px
-                color: #A6A6A6
-
-            &.ng-invalid.ng-touched
-                border-color: #FF0000
-                background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
-
-            &.ng-valid.ng-touched
-                border-color: $lightSecond
-                background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
-        //textarea
-        textarea
-            padding-left: 0px
-            border: 0px
-            box-shadow: none
-            border-bottom: 2px solid $light-grey-color
-
-            &:focus
-                border-color: $lightSecond
-
-            &:focus ~ label, &.ng-dirty ~ label
-                left: 8%
-                top: -16px
-                font-size: 12px
-                color: #A6A6A6
-
-            &.ng-invalid.ng-touched
-                border-color: #FF0000
-                background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
-
-            &.ng-valid.ng-touched
-                border-color: $lightSecond
-                background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
-
-
-        //select
-        select
-            -webkit-appearance: none
-            border: 0px
-            box-shadow: none
-            border-bottom: 2px solid $light-grey-color
-            padding: 0px
-            background: url("../../app/img/css-img/down-arrow.png") 98%/15px no-repeat
-
-            &:focus
-                border-color: $lightSecond
-
-            &:focus ~ label, &:valid ~ label
-                left: 8%
-                top: -16px
-                font-size: 12px
-                color: #A6A6A6
-
-            &.ng-invalid.ng-touched
-                border-color: #FF0000
-                background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
-
-            &.ng-valid.ng-touched
-                border-color: $lightSecond
-                background: url("../../app/img/css-img/down-arrow-valid.png") 98%/15px no-repeat
-
-        & .custom-tooltip
-            position: absolute
-            top: 5px
-            right: 10px
-            & i
-                color: #999
-
-    &.ng-submitted
-
-        input[type="text"], input[type="number"], input[type="email"], input[type="password"]
-
-            &.ng-invalid
-                border-color: #FF0000
-                background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
-
-            &.ng-valid
-                border-color: $lightSecond
-                background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
-
-        textarea
-
-            &.ng-invalid
-                border-color: #FF0000
-                background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
-
-            &.ng-valid
-                border-color: $lightSecond
-                background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
-
-        select
-
-            &.ng-invalid
-                border-color: #FF0000
-                background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
-
-            &.ng-valid
-                border-color: $lightSecond
-                background: url("../../app/img/css-img/down-arrow-valid.png") 98%/15px no-repeat
-
-
-    .form-control[disabled]
-        background-color: #ffffff
-
-    &__errorMessage
-        color: #FF0000
-
-    .input-file
-        margin: 10px
-        &__input
-            width: 0.1px
-            height: 0.1px
-            opacity: 0
-            overflow: hidden
-            position: absolute
-            z-index: -1
-            &:focus
-                box-shadow: none
-                border: none
-        &__label
-            position: relative
-            display: flex
-            justify-content: center
-            align-items: center
-            &--ok
-                color: $lightSecond
-            &:focus
-                outline: none
-                box-shadow: none
-                border: none
-                color: $lightSecond
-            &:hover
-                outline: none
-                box-shadow: none
-                border: none
-                color: $lightSecond
-            &__icon
-            &__text
+// .form
+//     &-control
+//         border-radius: 0px
+//         &:focus
+//             border-color: $light-grey-color
+//             box-shadow: none
+//
+// .css-form
+//     .form-group
+//         position: relative
+//         padding: 0% 10% 0% 10%
+//         max-width: 100%
+//         label
+//             color: #999
+//             font-size: 18px
+//             font-weight: normal
+//             position: absolute
+//             pointer-events: none
+//             left: 8%
+//             top: 0px
+//             transition: 0.2s ease all
+//             -moz-transition: 0.2s ease all
+//             -webkit-transition: 0.2s ease all
+//         &__options
+//             background-color: #FFF
+//             border: 2px
+//             border-top: 0px
+//             border-style: solid
+//             border-color: $light-grey-color
+//             position: absolute
+//             z-index: 1000
+//             width: 80%
+//             &__option
+//                 padding: 5px 0px
+//                 p
+//                     margin-bottom: 0px
+//             &__option:hover
+//                 background-color: $light-grey-color
+//         p.form-control
+//             font-size: 14px
+//             padding: 6px 0px
+//             box-shadow: none
+//             border: 0px
+//             border-bottom: 2px solid $lightSecond
+//             color: #A5A5A5
+//         p.form-control ~ label
+//             left: 8%
+//             top: -16px
+//             font-size: 12px
+//             color: #A6A6A6
+//
+//         input[type="text"], input[type="number"], input[type="email"], input[type="password"]
+//             border: 0px
+//             padding: 0px
+//             background: none
+//             box-shadow: none
+//             border-bottom: 2px solid $light-grey-color
+//
+//             &:focus
+//                 border-color: $lightSecond
+//
+//             &:focus ~ label, &:valid ~ label
+//                 left: 8%
+//                 top: -16px
+//                 font-size: 12px
+//                 color: #A6A6A6
+//
+//             &.ng-invalid.ng-touched
+//                 border-color: #FF0000
+//                 background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
+//
+//             &.ng-valid.ng-touched
+//                 border-color: $lightSecond
+//                 background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
+//         //textarea
+//         textarea
+//             padding-left: 0px
+//             border: 0px
+//             box-shadow: none
+//             border-bottom: 2px solid $light-grey-color
+//
+//             &:focus
+//                 border-color: $lightSecond
+//
+//             &:focus ~ label, &.ng-dirty ~ label
+//                 left: 8%
+//                 top: -16px
+//                 font-size: 12px
+//                 color: #A6A6A6
+//
+//             &.ng-invalid.ng-touched
+//                 border-color: #FF0000
+//                 background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
+//
+//             &.ng-valid.ng-touched
+//                 border-color: $lightSecond
+//                 background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
+//
+//
+//         //select
+//         select
+//             -webkit-appearance: none
+//             border: 0px
+//             box-shadow: none
+//             border-bottom: 2px solid $light-grey-color
+//             padding: 0px
+//             background: url("../../app/img/css-img/down-arrow.png") 98%/15px no-repeat
+//
+//             &:focus
+//                 border-color: $lightSecond
+//
+//             &:focus ~ label, &:valid ~ label
+//                 left: 8%
+//                 top: -16px
+//                 font-size: 12px
+//                 color: #A6A6A6
+//
+//             &.ng-invalid.ng-touched
+//                 border-color: #FF0000
+//                 background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
+//
+//             &.ng-valid.ng-touched
+//                 border-color: $lightSecond
+//                 background: url("../../app/img/css-img/down-arrow-valid.png") 98%/15px no-repeat
+//
+//         & .custom-tooltip
+//             position: absolute
+//             top: 5px
+//             right: 10px
+//             & i
+//                 color: #999
+//
+//     &.ng-submitted
+//
+//         input[type="text"], input[type="number"], input[type="email"], input[type="password"]
+//
+//             &.ng-invalid
+//                 border-color: #FF0000
+//                 background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
+//
+//             &.ng-valid
+//                 border-color: $lightSecond
+//                 background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
+//
+//         textarea
+//
+//             &.ng-invalid
+//                 border-color: #FF0000
+//                 background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
+//
+//             &.ng-valid
+//                 border-color: $lightSecond
+//                 background: url("../../app/img/css-img/check-ico.png") 98%/15px no-repeat
+//
+//         select
+//
+//             &.ng-invalid
+//                 border-color: #FF0000
+//                 background: url("../../app/img/css-img/cross-ico.png") 98%/12px no-repeat
+//
+//             &.ng-valid
+//                 border-color: $lightSecond
+//                 background: url("../../app/img/css-img/down-arrow-valid.png") 98%/15px no-repeat
+//
+//
+//     .form-control[disabled]
+//         background-color: #ffffff
+//
+//     &__errorMessage
+//         color: #FF0000
+//
+//     .input-file
+//         margin: 10px
+//         &__input
+//             width: 0.1px
+//             height: 0.1px
+//             opacity: 0
+//             overflow: hidden
+//             position: absolute
+//             z-index: -1
+//             &:focus
+//                 box-shadow: none
+//                 border: none
+//         &__label
+//             position: relative
+//             display: flex
+//             justify-content: center
+//             align-items: center
+//             &--ok
+//                 color: $lightSecond
+//             &:focus
+//                 outline: none
+//                 box-shadow: none
+//                 border: none
+//                 color: $lightSecond
+//             &:hover
+//                 outline: none
+//                 box-shadow: none
+//                 border: none
+//                 color: $lightSecond
+//             &__icon
+//             &__text
