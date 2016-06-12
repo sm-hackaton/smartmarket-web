@@ -29,6 +29,10 @@
                 url: '/seller',
                 templateUrl: helper.basepath('components', 'seller'),
                 controller: 'SellerController'
+            }).state('manager', {
+                url: '/manager',
+                templateUrl: helper.basepath('components', 'manager'),
+                controller: 'ManagerController'
             });
     }
 
