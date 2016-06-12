@@ -6,7 +6,7 @@
         top: 10vh
         right: 15%
         position: absolute
-        height: 85vh
+        height: auto
         width: 70%
         background-color: white
         &__metrics
@@ -23,7 +23,6 @@
                 align-items: center
                 position: relative
                 .title
-                    font-size: 20px
                     position: absolute
                     top: 10px
                     left: 10px
@@ -33,17 +32,18 @@
                     font-size: 15px
                     color: $mediun-grey-color
                 &--last
-                    border-right: 0px
+                    border-right: 0
         &__list
             width: 50%
-            height: 57vh
             overflow: scroll
             margin-top: 20px
+            height: 75vh
             &__item
                 height: 6em
                 padding-top: 15px
                 border-left: 2px solid white
                 display: flex
+                padding-left: 15px
                 &:hover
                     border-left: 2px solid $darkMain
                     background-color: $light-grey-color
@@ -64,7 +64,7 @@
                         margin: 0
                         margin-right: 20px
         &__user
-            padding: 0px 20px
+            padding: 0 20px
             display: flex
             flex-direction: column
             align-items: center
@@ -72,7 +72,7 @@
                 font-size: 30px
             h2
                 font-size: 20px
-                margin-top: 0px
+                margin-top: 0
             p
                 font-size: 18px
                 &::before
