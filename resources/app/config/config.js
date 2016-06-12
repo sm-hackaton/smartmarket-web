@@ -25,10 +25,10 @@
                 url: '/login',
                 templateUrl: helper.basepath('components', 'login'),
                 controller: 'LoginController'
-            }).state('home', {
-                url: '/home',
-                templateUrl: helper.basepath('components', 'home'),
-                controller: 'HomeController'
+            }).state('seller', {
+                url: '/seller',
+                templateUrl: helper.basepath('components', 'seller'),
+                controller: 'SellerController'
             });
     }
 

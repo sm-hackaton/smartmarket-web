@@ -21,7 +21,7 @@
             AuthenticationService.login($scope.username, $scope.password)
                 .then(function () {
                     $rootScope.headerInLogin = false;
-                    $state.go("home");
+                    $state.go("seller");
                 }).catch(function (err) {
                 // Validacion de errores
                 console.log('error');

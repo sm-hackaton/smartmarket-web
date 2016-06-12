@@ -38,7 +38,6 @@
 }
 
 .home {
-  background-color: #f7f7f7;
   margin-top: 200px;
   height: calc(100vh - 200px);
 }
@@ -196,10 +195,10 @@ input:focus {
 }
 
 body {
-  background: #FFFFFF;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   margin: 0px;
   color: #546672;
+  background-color: #d3d3d3;
 }
 
 .todo-wrapper {
@@ -4839,7 +4838,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #ffe79b;
+  background-color: #ffe79c;
   will-change: left, right;
 }
 
