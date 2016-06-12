@@ -2,9 +2,9 @@
     'use strict';
     angular
         .module('smartmarket-web')
-        .controller('Sellerontroller', Sellerontroller);
+        .controller('SellerController', SellerController);
 
-    Sellerontroller.$inject = ['$scope', '$rootScope', 'API', '$state'];
+    SellerController.$inject = ['$scope', '$rootScope', 'API', '$state'];
     /**
      * TodoController
      * @param $scope
@@ -13,7 +13,7 @@
      * @param $state
      * @constructor
      */
-    function Sellerontroller($scope, $rootScope, API, $state) {
+    function SellerController($scope, $rootScope, API, $state) {
         $scope.logout = logout;
 
         function logout() {
