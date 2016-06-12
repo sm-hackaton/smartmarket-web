@@ -2,3 +2,5 @@
 .idea/*
 .sass-cache
 bower_components
+public/app/js/app.js
+public/app/views

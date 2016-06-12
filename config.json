@@ -1,4 +1,4 @@
 {
-    "apiURL": "[your API URL]",
-    "webURL": "[your WEB URL]"
+    "apiURL": "localhost:8080",
+    "webURL": "127.0.0.1:9000"
 }
