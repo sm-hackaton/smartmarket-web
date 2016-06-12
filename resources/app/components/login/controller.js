@@ -4,18 +4,28 @@
         .module('smartmarket-web')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$scope', '$state', '$rootScope'];
+    LoginController.$inject = ['$scope', '$state', '$rootScope', 'AuthenticationService'];
     /**
      * TodoController
      * @param $scope
+     * @param $state
+     * @param $rootScope
+     * @param AuthenticationService
      * @constructor
      */
-    function LoginController($scope, $state, $rootScope) {
+    function LoginController($scope, $state, $rootScope, AuthenticationService) {
+        AuthenticationService.clearCredentials();
         $rootScope.headerInLogin = true;
 
-        $scope.login = function(){
-            $state.go("home")
-            $rootScope.headerInLogin = false;
+        $scope.login = function () {
+            AuthenticationService.login($scope.username, $scope.password)
+                .then(function () {
+                    $rootScope.headerInLogin = false;
+                    $state.go("home");
+                }).catch(function (err) {
+                // Validacion de errores
+                console.log('error');
+            });
         }
 
     }
